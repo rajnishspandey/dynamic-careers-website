@@ -21,3 +21,14 @@ def load_jobs_from_db():
         for row in result.all():
             jobs.append(row)
         return jobs
+    
+def load_job_from_db(id):
+    with engine.connect() as conn:
+        result = conn.execution_options(stream_results=True).execute(text(f"select * from jobs where id = {id}"))
+        rows = result.all()
+        if len(rows) == 0:
+            return None
+        else:
+            column_names = result.keys()
+            job_dict = dict(zip(column_names, rows[0]))
+            return job_dict
