@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-from database import load_jobs_from_db,load_job_from_db
+from database import load_jobs_from_db,load_job_from_db, submit_application
 
 app = Flask(__name__)
 
@@ -21,6 +21,7 @@ def show_job(id):
 def apply_job(id):
     data = request.form
     job = load_job_from_db(id)
+    submit_application(id, data)
     return render_template('application_submitted.html', application=data, job=job)
 
 if __name__ == "__main__":

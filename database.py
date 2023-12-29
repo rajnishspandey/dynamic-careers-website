@@ -32,3 +32,21 @@ def load_job_from_db(id):
             column_names = result.keys()
             job_dict = dict(zip(column_names, rows[0]))
             return job_dict
+        
+def submit_application(job_id, data):
+    with engine.connect() as conn:
+        query = text("""
+            INSERT INTO applications
+            (job_id, full_name, email, linkedin_url, education, work_experience, resume_url)
+            VALUES
+            (:job_id, :full_name, :email, :linkedin, :education, :work_experience, :resume_url)
+        """)
+        conn.execute(query, {
+            'job_id': job_id,
+            'full_name': data['full_name'],
+            'email': data['email'],
+            'linkedin': data['linkedin'],
+            'education': data['education'],
+            'work_experience': data['work_experience'],
+            'resume_url': data['resume_url']
+        })
