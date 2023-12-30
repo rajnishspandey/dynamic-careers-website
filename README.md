@@ -28,3 +28,21 @@ it's a dynamic-careers-website using python Flask, Bootstrap, html5,css and data
 ## production server
 > Gunicorn
 
+## Home Page
+![image](https://github.com/rajnishspandey/dynamic-careers-website/assets/43113659/f4445bc8-1e8f-4e4a-a3b6-b3c4824c5dc8)
+
+![image](https://github.com/rajnishspandey/dynamic-careers-website/assets/43113659/6928afb8-c25c-4b2c-98a4-301f8c4b26b1)
+
+## JD Page
+![image](https://github.com/rajnishspandey/dynamic-careers-website/assets/43113659/b43f259c-c127-48f2-90bc-ffdd301e6855)
+
+## Apply Page
+![image](https://github.com/rajnishspandey/dynamic-careers-website/assets/43113659/63ab486a-dfbf-40eb-aa56-10d9ff667290)
+
+
+
+
+
+
+
+
