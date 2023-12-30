@@ -1,5 +1,7 @@
 # career-website
-it's a dynamic-careers-website using python Flask, Bootstrap, html5,css and database as MySQL
+it's a dynamic-careers-website using python Flask, Bootstrap, html5,css and database as MySQL.
+
+> Note:- Craeate your own Environment variable for databae connection in this code we are using **DB_CRED** the credentials of the db connection can be changed as per your database.
 
 ## Deploy your python code for free - 
 1. https://render.com/
