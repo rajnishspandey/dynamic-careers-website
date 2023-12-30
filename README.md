@@ -1,8 +1,9 @@
 # career-website
 it's a dynamic-careers-website using python Flask, Bootstrap, html5,css and database as MySQL
 
-## Deploy your code python code for free - 
-> https://render.com/
+## Deploy your python code for free - 
+1. https://render.com/
+2. https://vercel.com/
 
 ## Get Random text generated
 > https://loremipsum.io/
