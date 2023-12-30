@@ -25,3 +25,6 @@ it's a dynamic-careers-website using python Flask, Bootstrap, html5,css and data
 ## send mail feature for free
 > https://www.mailjet.com/
 
+## production server
+> Gunicorn
+
